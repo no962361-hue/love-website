@@ -33,15 +33,17 @@ function nextQuestion() {
 
         document.getElementById("question2").style.display = "block";
 
-    })
+   .catch(function (error) {
 
-    .catch(function (error) {
+    console.log("FAILED...", error);
 
-        console.log("FAILED...", error);
+    alert(
+        "حصل خطأ ❌\n\n" +
+        "Status: " + error.status +
+        "\nMessage: " + error.text
+    );
 
-        alert("حصل خطأ في إرسال الإجابة ❌");
-
-    });
+});
 }
 
 
