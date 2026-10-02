@@ -5,7 +5,6 @@ function start() {
     document.getElementById("questions").style.display = "block";
 }
 
-
 function nextQuestion() {
 
     let answer = document.getElementById("specialAnswer").value;
