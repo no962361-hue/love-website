@@ -17,25 +17,46 @@ function nextQuestion() {
         return;
     }
 
-    document.getElementById("question1").style.display = "none";
 
-    document.getElementById("question2").style.display = "block";
+    emailjs.send(
+        "service_u9f00fb",
+        "izutyhq",
+        {
+            answer: answer
+        }
+    )
+
+    .then(function () {
+
+        alert("تم إرسال إجابتك ❤️");
+
+        document.getElementById("question1").style.display = "none";
+
+        document.getElementById("question2").style.display = "block";
+
+    })
+
+    .catch(function (error) {
+
+        console.log("FAILED...", error);
+
+        alert("حصل خطأ في إرسال الإجابة ❌");
+
+    });
 }
 
+
 function showNo() {
+
     document.getElementById("yesButton").innerText = "لا ❤️";
 }
 
+
 function showYes() {
+
     document.getElementById("yesButton").innerText = "نعم";
 }
 
-function answerNo() {
-
-    document.getElementById("question2").style.display = "none";
-
-    document.getElementById("finish").style.display = "block";
-}
 
 function answerNo() {
 
