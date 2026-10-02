@@ -5,6 +5,7 @@ function start() {
     document.getElementById("questions").style.display = "block";
 }
 
+
 function nextQuestion() {
 
     let answer = document.getElementById("specialAnswer").value;
@@ -33,17 +34,19 @@ function nextQuestion() {
 
         document.getElementById("question2").style.display = "block";
 
-   .catch(function (error) {
+    })
 
-    console.log("FAILED...", error);
+    .catch(function (error) {
 
-    alert(
-        "حصل خطأ ❌\n\n" +
-        "Status: " + error.status +
-        "\nMessage: " + error.text
-    );
+        console.log("FAILED...", error);
 
-});
+        alert(
+            "حصل خطأ ❌\n\n" +
+            "Status: " + error.status +
+            "\nMessage: " + error.text
+        );
+
+    });
 }
 
 
