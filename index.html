@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>❤️ أهلاً بك ❤️</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,10 +18,15 @@
 
         <!-- الترحيب -->
         <div id="welcome">
+
             <h1>❤️ أهلاً بك ❤️</h1>
+
             <p>منورة الموقع 😍</p>
 
-            <button onclick="start()">ابدئي</button>
+            <button onclick="start()">
+                ابدئي
+            </button>
+
         </div>
 
 
@@ -30,7 +36,9 @@
             <!-- السؤال الأول -->
             <div id="question1">
 
-                <h2>قولي حاجة مميزة بيننا؟ ❤️</h2>
+                <h2>
+                    قولي حاجة مميزة بيننا؟ ❤️
+                </h2>
 
                 <input
                     type="text"
@@ -46,27 +54,34 @@
 
 
             <!-- السؤال الثاني -->
-          <div id="question2">
-             <h2>هل هييجي اليوم وتبعدي عني؟ </h2>
-              <button
-              id="yesButton"
-              onmouseenter="showNo()"
-              onmouseleave="showYes()"
-              onclick="answerNo()"
-           >
-        نعم  
-    </button>
+            <div id="question2">
 
-    <button onclick="answerNo()">
-        لا ❤️
-    </button>
+                <h2>
+                    هل هييجي اليوم وتبعدي عني؟
+                </h2>
 
-</div>
+                <button
+                    id="yesButton"
+                    onmouseenter="showNo()"
+                    onmouseleave="showYes()"
+                    onclick="answerNo()"
+                >
+                    نعم
+                </button>
+
+                <button onclick="answerNo()">
+                    لا ❤️
+                </button>
+
+            </div>
+
 
             <!-- النهاية -->
             <div id="finish">
 
-                <h1>❤️ شكراً ليكي ❤️</h1>
+                <h1>
+                    ❤️ شكراً ليكي ❤️
+                </h1>
 
                 <p>
                     نورتيني، وربنا ما يبعدنا عن بعض أبداً 🥰
@@ -78,6 +93,17 @@
 
     </div>
 
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init({
+            publicKey: "045U37Swjs6p8mVBv"
+        });
+    </script>
+
+    <!-- ملف JavaScript بتاع الموقع -->
     <script src="script.js"></script>
 
 </body>
