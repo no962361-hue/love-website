@@ -20,7 +20,7 @@ function nextQuestion() {
 
     emailjs.send(
         "service_u9f0ofb",
-        "izutyhq",
+        "template_5gbsbps",
         {
             answer: answer
         }
