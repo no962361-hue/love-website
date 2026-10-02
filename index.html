@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ أهلاً بك ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hearts">
+        ❤️ 💕 💗 💖 💘 💓
+    </div>
+
+    <div class="container">
+
+        <!-- الترحيب -->
+        <div id="welcome">
+            <h1>❤️ أهلاً بك ❤️</h1>
+            <p>منورة الموقع 😍</p>
+
+            <button onclick="start()">ابدئي</button>
+        </div>
+
+
+        <!-- الأسئلة -->
+        <div id="questions">
+
+            <!-- السؤال الأول -->
+            <div id="question1">
+
+                <h2>قولي حاجة مميزة بيننا؟ ❤️</h2>
+
+                <input
+                    type="text"
+                    id="specialAnswer"
+                    placeholder="اكتبي إجابتك"
+                >
+
+                <button onclick="nextQuestion()">
+                    التالي
+                </button>
+
+            </div>
+
+
+            <!-- السؤال الثاني -->
+          <div id="question2">
+             <h2>هل هييجي اليوم وتبعدي عني؟ </h2>
+              <button
+              id="yesButton"
+              onmouseenter="showNo()"
+              onmouseleave="showYes()"
+              onclick="answerNo()"
+           >
+        نعم  
+    </button>
+
+    <button onclick="answerNo()">
+        لا ❤️
+    </button>
+
+</div>
+
+            <!-- النهاية -->
+            <div id="finish">
+
+                <h1>❤️ شكراً ليكي ❤️</h1>
+
+                <p>
+                    نورتيني، وربنا ما يبعدنا عن بعض أبداً 🥰
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
